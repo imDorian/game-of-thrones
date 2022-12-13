@@ -1,0 +1,85 @@
+@font-face{
+    font-family: 'GameofThrones';
+    src: url('../font/game-of-thrones/Game\ of\ Thrones.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+.b-chronology{
+    overflow-y: scroll;
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &::-webkit-scrollbar {
+      width: 2px;               /* width of the entire scrollbar */
+      
+    }
+    
+  &::-webkit-scrollbar-track {
+      background: #443d3d         /* color of the tracking area */
+    }
+    
+  &::-webkit-scrollbar-thumb {
+      background-color: white;    /* color of the scroll thumb */
+      border-radius: 10px;       /* roundness of the scroll thumb */
+      border: 0px solid orange;  /* creates padding around scroll thumb */
+    }
+
+    &--btn{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: solid 2px white;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      margin-top: 20px;
+
+    }
+
+
+    &--card{
+      height: 30rem;
+      width: 40%;
+      border-top: 2px solid rgb(255, 255, 255);
+      display:grid;
+      place-content: center;
+
+
+      &__img{
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: 0 170px 19px 150px;
+      }
+
+      &__age{
+        color:white;
+        text-align: center;
+        width: 27px;
+        height: 46px;
+        margin: 4px 170px 19px 179px;
+        font-family: 'GameofThrones';
+      }
+
+      &__name{
+        width: 400px;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: white;
+        font-family: 'GameofThrones';
+      }
+
+    }
+  
+}

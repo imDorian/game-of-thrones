@@ -1,0 +1,22 @@
+.container-search{
+    height: 10vh;
+    background-color: black;
+
+    
+
+    &--div{
+        border-bottom: 1px solid white;
+        width: 50%;
+        &--input{
+            height: 32px;
+            background-color: black;
+            border: 0;
+            outline-style: none;
+            color: white;
+            font-size: 22px;
+            &::placeholder{
+                color: rgba(255, 255, 255, 0.581)
+            }
+        }
+    }
+}
